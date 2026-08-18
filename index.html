@@ -57,6 +57,7 @@
       justify-content: center;
       gap: 2.5rem;
       padding: 1rem 2rem;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -308,6 +309,22 @@
       color: var(--moss);
       text-decoration: underline;
       text-underline-offset: 3px;
+    }
+
+    /* ── MENU / MEAL CHOICE ── */
+    #food {
+      text-align: center;
+    }
+
+    #food h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    .food-intro {
+      color: var(--stone);
+      font-size: 15px;
+      max-width: 540px;
+      margin: 0 auto 2.5rem;
     }
 
     /* ── GALLERY ── */
@@ -691,6 +708,7 @@
   <nav>
     <a href="#info">The Day</a>
     <a href="#travel">Travel</a>
+    <a href="#food">Menu</a>
     <a href="#gallery">Gallery</a>
     <a href="#rsvp">RSVP</a>
     <a href="#faq">FAQ</a>
@@ -783,28 +801,21 @@
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <!--
-  ════════════════════════════════════════════════════
-  HOW TO ADD YOUR PHOTOS
-  ════════════════════════════════════════════════════
-  1. Create a folder called "photos" next to this index.html
-  2. Copy your images into it (rename them 1.jpg, 2.jpg … or keep
-     your own names and update the src attributes below)
-  3. Each <img> already has src="photos/1.jpg" — just change the
-     filename for each slot, e.g. src="photos/ceremony.jpg"
+  <hr class="ruled-line">
 
-  FILE STRUCTURE expected:
-    your-repo/
-    ├── index.html        ← this file
-    └── photos/
-        ├── 1.jpg         ← tall portrait (left slot — spans full height)
-        ├── 2.jpg
-        ├── 3.jpg
-        ├── 4.jpg
-        └── 5.jpg
-  ════════════════════════════════════════════════════
--->
+  <!-- MENU / MEAL CHOICE -->
+  <section id="food">
+    <p class="section-label">Menu</p>
+    <h2>Your <em>main course</em></h2>
+    <p class="food-intro">
+      Throughout the evening we'll have a Swedish table laid out with snacks, appetizers, and other
+      little treats for everyone to enjoy. The one thing we'd love to know
+      ahead of time is your main course, so take a moment to pick yours below.
+    </p>
+    <a class="rsvp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfS8VtgS0Ihj3CWEHHsO7KCKdRaPs-MMGyOsTMEZo3rdgI6Dg/viewform?usp=publish-editor" target="_blank" rel="noopener">Choose your meal</a>
+    <p class="rsvp-deadline">Please respond by 1st of September 2026</p>
+  </section>
+
   <div id="gallery">
     <div class="inner">
       <p class="section-label">Photos</p>
